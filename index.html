@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-5</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <span class="before"></span>
+        <button class="switch">Sign-Up</button>
+        <p>If you do not have an account click <span class="mobileBtn">here</span></p>
+        <div class="box one">
+            <h2>Login</h2>
+            <form action="">
+                <div class="user-box">
+                        <input
+                        type="text" 
+                        id="username" 
+                        required="true" 
+                        autocomplete="true"
+                        spellcheck="true"
+                        editable="true"
+                        placeholder="User Name"
+                        >
+                        <i class="fa-solid fa-user"></i>
+                        <label class="user" for="username">
+                        </label>
+                    </div>
+                <div class="pass-box">
+                    <input
+                    type="password" 
+                    id="pass" 
+                    autocomplete="true"
+                    required 
+                    minlength="8" 
+                    maxlength="16"
+                    placeholder="Password">
+                    <i class="fa-solid login fa-eye"></i>
+                    <label class="passw" for="pass">
+                    </label>
+                </div>
+            </form>
+            <a href="#">Forgot Password?</a>
+            <button type="button" class="link" >login</button>
+        </div>
+
+        <div class="box two">
+            <h2>Sign up</h2>
+            <form action="">
+                <div class="user-box">
+                        <input
+                        type="text" 
+                        id="firstName" 
+                        required="true" 
+                        autocomplete="true"
+                        spellcheck="true"
+                        editable="true"
+                        placeholder="First Name"
+                        >
+                        <i class="fa-solid fa-user"></i>
+                        <label class="user" for="firstName">
+                        </label>
+                </div>
+                <div class="user-box">
+                        <input
+                        type="text" 
+                        id="secondName" 
+                        required="true" 
+                        autocomplete="true"
+                        spellcheck="true"
+                        editable="true"
+                        placeholder="Second Name"
+                        >
+                        <i class="fa-solid fa-user"></i>
+                        <label class="user" for="secondName">
+                        </label>
+                </div>
+                <div class="user-box">
+                        <input
+                        type="date" 
+                        required="true">
+                        <i class="fa-regular fa-calendar-days"></i>
+                </div>
+                <div class="pass-box">
+                    <input
+                    type="password" 
+                    id="pass2" 
+                    autocomplete="true"
+                    required 
+                    minlength="8" 
+                    maxlength="16"
+                    placeholder="Password">
+                    <i class="fa-solid sign-up fa-eye "></i>
+                    <label class="passw" for="pass2">
+                        
+                    </label>
+                </div>
+                <div class="pass-box">
+                    <input
+                    type="password" 
+                    id="pass3" 
+                    autocomplete="true"
+                    required 
+                    minlength="8" 
+                    maxlength="16"
+                    placeholder="Password">
+                    <label class="passw" for="pass3">
+                    </label>
+                </div>
+            </form>
+            <button type="button" class="link" >Sign Up</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/test.js"></script>
+
+</body>
+</html>
