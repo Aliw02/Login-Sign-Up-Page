@@ -81,9 +81,41 @@
                 </div>
                 <div class="user-box">
                         <input
+                        type="text" 
+                        id="userName" 
+                        required="true" 
+                        autocomplete="true"
+                        spellcheck="true"
+                        editable="true"
+                        placeholder="User Name"
+                        >
+                        <i class="fa-solid fa-user"></i>
+                        <label class="user" for="userName">
+                        </label>
+                </div>
+                <div class="user-box">
+                        <input
+                        type="email" 
+                        id="e-mail" 
+                        required="true" 
+                        autocomplete="true"
+                        spellcheck="true"
+                        editable="true"
+                        placeholder="Email"
+                        >
+                        <i class="fa-solid fa-at"></i>
+                        <label class="user" for="e-mail">
+                        </label>
+                </div>
+                <div class="user-box">
+                        <input
                         type="date" 
-                        required="true">
-                        <i class="fa-regular fa-calendar-days"></i>
+                        id="birthDate" 
+                        required="true"
+                        >
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <label class="user" for="birthDate">
+                        </label>
                 </div>
                 <div class="pass-box">
                     <input
@@ -93,7 +125,8 @@
                     required 
                     minlength="8" 
                     maxlength="16"
-                    placeholder="Password">
+                    placeholder="Password"
+                    >
                     <i class="fa-solid sign-up fa-eye "></i>
                     <label class="passw" for="pass2">
                         
@@ -112,12 +145,14 @@
                     </label>
                 </div>
             </form>
-            <button type="button" class="link" >Sign Up</button>
+            <button type="button" class="signUpBtn" >Sign Up</button>
         </div>
     </div>
 
     <script src="./js/main.js"></script>
     <script src="./js/test.js"></script>
+    <!-- <script src="./js/test2.js" type="module"></script> -->
+    <script src="./js/signUp.js"></script>
 
 </body>
 </html>
