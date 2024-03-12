@@ -10,9 +10,11 @@
 <body>
 
     <div class="container">
-        <span class="before"></span>
-        <button class="switch">Sign-Up</button>
+        <!-- <span class="before"></span>
+        <button class="switch">Sign-Up</button> -->
         <p>If you do not have an account click <span class="mobileBtn">here</span></p>
+        
+        <span id="alertSpan"></span>
         <div class="box one">
             <h2>Login</h2>
             <form action="">
@@ -55,7 +57,7 @@
                         <input
                         type="text" 
                         id="firstName" 
-                        required="true" 
+                        required 
                         autocomplete="true"
                         spellcheck="true"
                         editable="true"
@@ -69,7 +71,7 @@
                         <input
                         type="text" 
                         id="secondName" 
-                        required="true" 
+                        required
                         autocomplete="true"
                         spellcheck="true"
                         editable="true"
@@ -83,15 +85,17 @@
                         <input
                         type="text" 
                         id="userName" 
-                        required="true" 
+                        required 
                         autocomplete="true"
                         spellcheck="true"
                         editable="true"
                         placeholder="User Name"
                         >
-                        <i class="fa-solid fa-user"></i>
+                        <i id="userNameIcon" class="fa-solid fa-user"></i>
+                        <i id="userNameAlert" class="fa-regular fa-rectangle-xmark"></i>
                         <label class="user" for="userName">
                         </label>
+                        
                 </div>
                 <div class="user-box">
                         <input
@@ -127,7 +131,8 @@
                     maxlength="16"
                     placeholder="Password"
                     >
-                    <i class="fa-solid sign-up fa-eye "></i>
+                    <i id="passIcon" class="fa-solid sign-up fa-eye"></i>
+                    <i id="passAlert" class="fa-regular fa-rectangle-xmark"></i>
                     <label class="passw" for="pass2">
                         
                     </label>
@@ -140,7 +145,8 @@
                     required 
                     minlength="8" 
                     maxlength="16"
-                    placeholder="Password">
+                    placeholder="Password"
+                    >
                     <label class="passw" for="pass3">
                     </label>
                 </div>
@@ -150,8 +156,7 @@
     </div>
 
     <script src="./js/main.js"></script>
-    <script src="./js/test.js"></script>
-    <!-- <script src="./js/test2.js" type="module"></script> -->
+    <script src="./js/desgin.js"></script>
     <script src="./js/signUp.js"></script>
 
 </body>

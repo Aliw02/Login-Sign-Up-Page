@@ -1,6 +1,8 @@
 let username = document.getElementById('username');
 let password = document.getElementById('pass');
 let button = document.querySelector('.link');
+let alertSpan = document.getElementById("alertSpan");
+
 
 
 button.addEventListener("click", ()=> {
@@ -10,9 +12,9 @@ button.addEventListener("click", ()=> {
     if (storedData.some(element => username.value === element["User Name"] && password.value === element["Password"])) {
         window.location.href = "../local.html";
     } else {
-        alert("Your username or password are invalid. Please try again :)");
+        alertSpan.innerText = "Username or password are invalid. Please try again :)"
+        alertSpan.style.display = "block";
     }
-    
 });
 
 
